@@ -1,0 +1,53 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply overflow-x-hidden scroll-smooth scroll-my-96
+}
+body {
+  @apply bg-primary text-white font-jose  ;
+}
+* {
+  @apply box-border m-0 p-0 outline-none ;
+}
+
+.padding {
+  @apply md:px-10 px-5 md:py-5 py-5
+}
+
+.nav {
+  @apply flex items-center justify-between h-fit;
+}
+
+.h-cover {
+  @apply  min-h-[calc(100vh-70px)] mt-[70px] 
+}
+.btn-primary {
+  @apply cursor-pointer bg-secondary text-white font-outfit px-4 py-2 flex gap-2 rounded-md overflow-hidden hover:opacity-75 duration-300;
+}
+.btn-secondary {
+  @apply cursor-pointer bg-transparent text-white font-outfit px-4 py-2 flex gap-2 rounded-md overflow-hidden border border-secondary hover:opacity-75 duration-300;
+}
+
+/* Glowing animated border */
+.border-gradient {
+  background: linear-gradient(45deg, #6a00ff, #ff00c8, #7000ff);
+  background-size: 400% 400%;
+  animation: glow 6s ease infinite;
+  -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  padding: 3px;
+}
+
+@keyframes glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
