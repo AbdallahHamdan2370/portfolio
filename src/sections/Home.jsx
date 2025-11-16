@@ -32,6 +32,7 @@ const Home = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="w-[220px] h-[220px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-secondary shadow-xl shadow-secondary/30 mb-2"
       >
+        <br></br>
         <img
           src={profileImg}
           alt="Profile"
