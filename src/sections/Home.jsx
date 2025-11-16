@@ -25,20 +25,27 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center text-center gap-5 w-full max-w-[900px] mx-auto font-jose">
         <br></br>
 
-        {/* PROFILE IMAGE */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="w-[220px] h-[220px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-secondary shadow-xl shadow-secondary/30 mb-2"
-      >
-        <br></br>
-        <img
-          src={profileImg}
-          alt="Profile"
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
+       {/* PROFILE IMAGE */}
+<motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+  className="
+    w-[150px] h-[150px] 
+    md:w-[200px] md:h-[200px] 
+    rounded-full overflow-hidden 
+    border-4 border-secondary 
+    shadow-xl shadow-secondary/30 
+    mt-10 mb-2 mx-auto
+  "
+>
+  <img
+    src={profileImg}
+    alt="Profile"
+    className="w-full h-full object-cover"
+  />
+</motion.div>
+
 
 
         {/* SUBHEADING */}
