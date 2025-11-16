@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Spliter from "../components/Spliter";
 import WordSpliter from "../components/WordSpliter";
 import { headingVariants } from "../utils/animations";
-import profileImg from "../imgs/profile.png"; // <-- ADD YOUR IMAGE HERE
+import profileImg from "../imgs/profile1.png"; // <-- ADD YOUR IMAGE HERE
 
 const Home = () => {
   const heading = "Computer Engineering";
