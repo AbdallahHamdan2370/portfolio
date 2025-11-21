@@ -1,12 +1,14 @@
 import React from "react";
 import EducationCard from "../components/EducationCard";
-import img2 from "../imgs/img2.jpg";
+import ed from "../imgs/ed.jpeg";
+import ed2 from "../imgs/ed2.jpeg";
+import ed3 from "../imgs/ed3.jpeg";
 import { fadeInLeft, fadeInRight, parentVariant } from "../utils/animations";
 import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center flex-col gap-3 padding overflow-x-hidden">
+    <div className="min-h-screen w-full flex items-center justify-center flex-col gap-3 padding overflow-x-hidden mt-28">
       <motion.h1
         variants={fadeInLeft}
         initial="initial"
@@ -27,7 +29,47 @@ const Education = () => {
           className="rounded-xl overflow-hidden md:w-[30%] h-[180px] md:h-[380px] w-full relative"
         >
           <motion.img
-            src={img2}
+            src={ed}
+            alt="image"
+            className="w-full md:w-full md:h-full h-full object-cover"
+          />
+          <div
+            className="absolute top-0 left-0 w-full h-full"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)",
+            }}
+          />
+        </motion.div>
+                <motion.div
+          variants={fadeInLeft}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.125 }}
+          className="rounded-xl overflow-hidden md:w-[30%] h-[180px] md:h-[380px] w-full relative"
+        >
+          <motion.img
+            src={ed2}
+            alt="image"
+            className="w-full md:w-full md:h-full h-full object-cover"
+          />
+          <div
+            className="absolute top-0 left-0 w-full h-full"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)",
+            }}
+          />
+        </motion.div>
+        <motion.div
+          variants={fadeInLeft}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.125 }}
+          className="rounded-xl overflow-hidden md:w-[30%] h-[180px] md:h-[380px] w-full relative"
+        >
+          <motion.img
+            src={ed3}
             alt="image"
             className="w-full md:w-full md:h-full h-full object-cover"
           />

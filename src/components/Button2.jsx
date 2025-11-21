@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { fadeInRightDelayed } from "../utils/animations";
-const Button2 = ({ text, icon, section }) => {
+
+const Button2 = ({ text, icon, to }) => {
   return (
-    <motion.a
-      variants={fadeInRightDelayed}
-      initial="initial"
-      animate="animate"
-      href={"#" + section}
-      className="flex items-center justify-center gap-3 px-4 py-3 bg-transparent border border-secondary rounded-lg cursor-pointer "
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="btn-secondary flex items-center gap-2 px-6 py-3 rounded-full cursor-pointer"
     >
-      <i className={`${icon} flex items-center`}></i>
-      <span className="font-outfit">{text}</span>
-    </motion.a>
+      <Link to={to} className="flex items-center gap-2">
+        <i className={icon}></i>
+        <span>{text}</span>
+      </Link>
+    </motion.div>
   );
 };
 

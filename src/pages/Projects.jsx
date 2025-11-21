@@ -10,7 +10,7 @@ import { fadeInLeft, parentVariant } from "../utils/animations";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen padding flex items-center justify-center flex-wrap w-full flex-col gap-4 overflow-x-hidden">
+    <div className="min-h-screen padding flex items-center justify-center flex-wrap w-full flex-col gap-4 overflow-x-hidden mt-28">
       <motion.h1
         variants={fadeInLeft}
         initial="initial"

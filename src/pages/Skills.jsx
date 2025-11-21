@@ -10,7 +10,7 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-full min-h-screen padding flex flex-col md:flex-row items-center justify-center gap-12 font-outfit overflow-x-hidden">
+    <div className="w-full min-h-screen padding flex flex-col md:flex-row items-center justify-center gap-12 font-outfit overflow-x-hidden mt-28">
 
       {/* LEFT COLUMN — HEADING / TEXT / TABS */}
       <motion.div

@@ -92,10 +92,11 @@ const Home = () => {
         >
           <Button text={"View CV"} icon={"fi fi-rr-eye"} />
           <Button2
-            text={"Contact Me"}
-            icon={"fi fi-rr-comment-dots"}
-            section={"contact"}
-          />
+          text="Contact Me"
+          icon="fi fi-rr-comment-dots"
+          to="/contact"
+           />
+
         </motion.div>
       </div>
 
