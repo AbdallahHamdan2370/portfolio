@@ -1,33 +1,33 @@
-import Navbar from "./components/Navbar";
-import Contact from "./sections/Contact";
-import Education from "./sections/Education";
-import Home from "./sections/Home";
-import Projects from "./sections/Projects";
-import Footer from "./components/Footer";
-import Skills from "./sections/Skills";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+// Pages
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Education from "./pages/Education";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import CourseReflection from "./pages/CourseReflection";
+
+export default function App() {
   return (
     <>
       <Navbar />
-      <div>
-        <Home id="#" />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="education">
-        <Education />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/course-reflection" element={<CourseReflection />} />
+      </Routes>
+
       <Footer />
     </>
   );
 }
-
-export default App;
