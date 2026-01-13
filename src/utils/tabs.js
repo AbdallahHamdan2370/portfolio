@@ -6,18 +6,19 @@ export const tabs = [
   { title: "Projects", path: "/projects" },
   { title: "Education", path: "/education" },
   { title: "Contact", path: "/contact" },
-  { title: "About", path: "/about" },
-  { title: "Course Reflection", path: "/course-reflection" },
+
 ];
 
 // Tabs used inside the Skills page
 export const skillsTabs = [
+
   {
     title: "Tech Stack",
   },
-  {
+      {
     title: "Tools",
   },
+
 ];
 
 // Social links used in Contact/Footer

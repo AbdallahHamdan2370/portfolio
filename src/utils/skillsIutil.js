@@ -43,7 +43,7 @@ export const techStack = [
     icon: "devicon-html5-plain colored",
   },
 
-  // ⭐ Added Skills ⭐
+  // ⭐ Programming & Engineering ⭐
   {
     name: "Python",
     icon: "devicon-python-plain colored",
@@ -58,7 +58,7 @@ export const techStack = [
   },
   {
     name: "VHDL",
-    icon: "devicon-vscode-plain", // closest icon (no official VHDL icon exists)
+    icon: "devicon-vscode-plain", // no official VHDL icon
   },
 ];
 
@@ -67,6 +67,7 @@ export const techStack = [
 //        TOOLS
 // =======================
 export const tools = [
+  // --- Development ---
   {
     name: "Visual Studio Code",
     icon: "devicon-vscode-plain colored",
@@ -103,8 +104,6 @@ export const tools = [
     name: "NPM",
     icon: "devicon-npm-original-wordmark colored",
   },
-
-  // ⭐ Added Tools ⭐
   {
     name: "PyCharm",
     icon: "devicon-pycharm-plain colored",
@@ -113,25 +112,71 @@ export const tools = [
     name: "Visual Studio",
     icon: "devicon-visualstudio-plain colored",
   },
+
+  // --- Operating Systems & Virtualization ---
   {
     name: "Linux",
-    icon: "devicon-linux-plain colored",  // ✔ official
+    icon: "devicon-linux-plain colored",
   },
   {
     name: "Kali Linux",
-    icon: "devicon-kali-linux-plain colored", // ✔ official
+    icon: "devicon-kali-linux-plain colored",
+  },
+  {
+    name: "Parrot OS",
+    icon: "devicon-linux-plain colored", // Parrot has no official icon
   },
   {
     name: "VMware",
-    icon: "devicon-vmware-plain colored", // ✔ official
+    icon: "devicon-vmware-plain colored",
   },
   {
-    name: "MATLAB",
-    icon: "devicon-matlab-plain colored", // ✔ official
+    name: "VirtualBox",
+    icon: "devicon-virtualbox-plain colored",
+  },
+
+  // --- Cybersecurity & Networking ---
+  {
+    name: "Nmap",
+    icon: "devicon-linux-plain colored", // commonly represented via Linux
+  },
+  {
+    name: "Metasploit",
+    icon: "devicon-linux-plain colored",
+  },
+  {
+    name: "Burp Suite",
+    icon: "devicon-chrome-plain colored", // web security context
+  },
+  {
+    name: "Wireshark",
+    icon: "devicon-linux-plain colored",
+  },
+  {
+    name: "John the Ripper",
+    icon: "devicon-linux-plain colored",
+  },
+  {
+    name: "SQLmap",
+    icon: "devicon-mysql-plain colored",
+  },
+  {
+    name: "OWASP ZAP",
+    icon: "devicon-chrome-plain colored",
+  },
+  {
+    name: "Snort IDS",
+    icon: "devicon-linux-plain colored",
   },
   {
     name: "Packet Tracer",
-    icon: "fi fi-rr-network", // closest available
+    icon: "fi fi-rr-network",
+  },
+
+  // --- Embedded / Engineering ---
+  {
+    name: "MATLAB",
+    icon: "devicon-matlab-plain colored",
   },
   {
     name: "Arduino",
